@@ -100,7 +100,7 @@ Con los datos cargados, ahora podemos ver la proporción de muertes a lo largo d
 usando ggplot.
 5.2. Utilice la función labs para dar al eje x y al eje y una estética a las etiquetas.
 ```{r}
-ggplot(monthly, aes(x=date, y=proportion_deaths), xlab = " ", ylab = " " ) +
+ggplot(monthly, aes(x=date, y=proportion_deaths)) +
   geom_line() +
   labs(x= "Months",
        y= "Proportion deaths",
@@ -125,7 +125,8 @@ ggplot(death_by_year, aes(x=Years, y=avg_by_year, color = Years)) +
        y= "Proportion deaths",
        title = "Average deaths per day")
 ```
-Los resultados del lavado de manos
+6. Los resultados del lavado de manos
+
 A partir del año 1847 la proporción de muertes se reduce drásticamente y, sí, fue entonces
 cuando se hizo obligatorio el lavado de manos.
 El efecto del lavado de manos se hace aún más claro si lo resaltamos en el gráfico.
