@@ -199,7 +199,7 @@ Una prueba t produce muchos números, pero lo que interesa es el intervalo de co
 ```{r}
 t.test(x = month_summary$handwashing_started, y = month_summary$mean_proportion_deaths, data=month_summary)
 ```
-p-value > 0.05, por lo que se acepta la Ho, con un nivel de confianza del 95% se acepta Ho, la diferencia de las medias es igual a 0
+p-value > 0.05, por lo que se acepta la Ho, con un nivel de confianza del 95% se acepta Ho, la diferencia de las medias es igual a 0.
 
 
 
